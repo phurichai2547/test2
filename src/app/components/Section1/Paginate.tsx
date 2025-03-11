@@ -20,7 +20,7 @@ export default function App() {
           priority={true}
           style={{
             width: "100%",
-            height: "100%",
+            height: "620px",
             objectFit: "cover",
           }}
         />
@@ -30,7 +30,7 @@ export default function App() {
           priority={true}
           style={{
             width: "100%",
-            height: "100%",
+            height: "620px",
             objectFit: "cover",
           }}
         />
@@ -40,7 +40,7 @@ export default function App() {
           priority={true}
           style={{
             width: "100%",
-            height: "100%",
+            height: "620px",
             objectFit: "cover",
           }}
         />
@@ -50,7 +50,7 @@ export default function App() {
           priority={true}
           style={{
             width: "100%",
-            height: "100%",
+            height: "620px",
             objectFit: "cover",
           }}
         />
