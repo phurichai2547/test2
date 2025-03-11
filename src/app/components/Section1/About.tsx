@@ -3,7 +3,7 @@ import home1 from "../../public/imgs/home1.png"
 import homecrop from "../../public/imgs/homecrop.png"
 import { Box, Button, Grid2, Typography } from "@mui/material";
 import homes from "../../public/imgs/homes.png"
-import Paginate from "../Section1/Paginate"
+import Paginate from "./Paginate"
 
 const About = () => {
   return (

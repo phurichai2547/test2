@@ -1,4 +1,4 @@
-import Tree from "./../../public/imgs/Tree.png"
+import Tree from "../../public/imgs/Tree.png"
 import Wifi from "./../../public/imgs/Wifi.png"
 import Money from "./../../public/imgs/Money.png"
 import Image from "next/image"

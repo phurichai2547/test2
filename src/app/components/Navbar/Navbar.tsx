@@ -18,34 +18,37 @@ function ResponsiveAppBar() {
         position: "static",
         bgcolor: "white",
         boxShadow: 0,
-        py: 3,
+        py: "3%", // ใช้ % แทน px
         width: "100%",
       }}
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
+          {/* โลโก้ */}
           <Typography
             variant="h4"
             noWrap
             component="a"
             fontWeight={700}
             sx={{
-              display: { xs: "flex", md: "flex", lg: "flex" },
+              display: "flex",
               fontFamily: "Playfair Display",
               fontWeight: 700,
               color: "#0E204E",
               textDecoration: "none",
+              flexGrow: 1, // ทำให้โลโก้อยู่ทางซ้ายสุด
             }}
           >
             Pineapple <br /> Island
           </Typography>
 
+          {/* เมนูสำหรับ Desktop */}
           <Box
             sx={{
               flexGrow: 1,
               display: { xs: "none", md: "none", lg: "flex" },
               justifyContent: "center",
-              gap: "87px",
+              gap: "5%", // ใช้ % เพื่อให้ขนาดสัมพันธ์กับหน้าจอ
             }}
           >
             {pages.map((page) => (
@@ -59,18 +62,21 @@ function ResponsiveAppBar() {
             ))}
           </Box>
 
+          {/* Hamburger Menu สำหรับ Mobile */}
           <Tooltip title="Open menu">
             <IconButton
               size="large"
               sx={{
                 display: { xs: "flex", md: "flex", lg: "none" },
                 color: "#0E204E",
+                ml: "auto", // ดันไปอยู่ด้านขวา
               }}
             >
               <MenuIcon />
             </IconButton>
           </Tooltip>
 
+          {/* ปุ่ม Get in Touch */}
           <Button
             variant="contained"
             sx={{
@@ -78,8 +84,8 @@ function ResponsiveAppBar() {
               textTransform: "none",
               borderRadius: 0,
               backgroundColor: "#0E204E",
-              width: "188px",
-              height: "50px",
+              width: { xs: "50%", md: "30%", lg: "15%" }, // ปรับให้ responsive
+              height: "10%", // ใช้ % แทน px
               display: { xs: "none", md: "none", lg: "flex" },
             }}
           >

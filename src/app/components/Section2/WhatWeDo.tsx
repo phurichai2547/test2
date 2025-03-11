@@ -1,12 +1,12 @@
-import { Box, Grid2, Typography } from "@mui/material"
-import Image from "next/image"
-import room from "../../public/imgs/room.png"
-import garden1 from "../../public/imgs/garden1.png"
-import garden2 from "../../public/imgs/garden2.png"
-import livingroom from "../../public/imgs/livingroom.png"
-import FrameLogo from  "../Section2/FrameLogo"
-import FrameLogo1 from "../Section2/FrameLogo1"
-import FrameLogo2 from "../Section2/FrameLogo2"
+import { Box, Grid2, Typography } from "@mui/material";
+import Image from "next/image";
+import room from "../../public/imgs/room.png";
+import garden1 from "../../public/imgs/garden1.png";
+import garden2 from "../../public/imgs/garden2.png";
+import livingroom from "../../public/imgs/livingroom.png";
+import FrameLogo from "./FrameLogo";
+import FrameLogo1 from "./FrameLogo1";
+import FrramLogo2 from "./FrameLogo2";
 
 const WhatWeDo = () => {
   return (
@@ -385,7 +385,7 @@ const WhatWeDo = () => {
               height: "247px"
             }}
           >
-            <FrameLogo2 />
+            <FrramLogo2 />
           </Box>
         </Box>
       </Box>
