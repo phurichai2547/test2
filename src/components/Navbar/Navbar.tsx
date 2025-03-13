@@ -116,23 +116,23 @@ export default function Navbar() {
               display: { laptop: "none" },
               flexDirection: "column",
               cursor: "pointer",
-              gap: "8px", // เพิ่มระยะห่างให้มากขึ้น
+              gap: "12px",
               alignItems: "center",
               justifyContent: "center",
               padding: "10px",
-              "&:hover > div": { transform: "scaleX(1.1)" }, // เพิ่ม effect hover
+              "&:hover > div": { transform: "scaleX(1.1)" },
             }}
           >
             {[...Array(3)].map((_, i) => (
               <Box
                 key={i}
                 sx={{
-                  width: "35px", // ปรับให้กว้างขึ้น
-                  height: "4px", // ปรับความหนาให้ดูดีขึ้น
+                  width: "30px",
+                  height: "3px",
                   backgroundColor: "#0E204E",
-                  borderRadius: "2px", // ทำให้เส้นมนขึ้น
+                  borderRadius: "2px",
                   transition: "transform 0.3s ease-in-out",
-                  margin: "2px 0", // เพิ่มระยะห่างของแต่ละแถบ
+                  margin: "5px 0",
                 }}
               />
             ))}
