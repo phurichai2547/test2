@@ -9,7 +9,6 @@ import {
 } from "@mui/material";
 import { Manrope } from "next/font/google";
 
-// Import Font
 const manrope = Manrope({ weight: "400", subsets: ["latin"] });
 
 export default function Navbar() {
@@ -117,17 +116,23 @@ export default function Navbar() {
               display: { laptop: "none" },
               flexDirection: "column",
               cursor: "pointer",
-              gap: "5px",
+              gap: "8px", // เพิ่มระยะห่างให้มากขึ้น
+              alignItems: "center",
+              justifyContent: "center",
+              padding: "10px",
+              "&:hover > div": { transform: "scaleX(1.1)" }, // เพิ่ม effect hover
             }}
           >
             {[...Array(3)].map((_, i) => (
               <Box
                 key={i}
                 sx={{
-                  width: "30px",
-                  height: "5px",
+                  width: "35px", // ปรับให้กว้างขึ้น
+                  height: "4px", // ปรับความหนาให้ดูดีขึ้น
                   backgroundColor: "#0E204E",
-                  transition: "transform 0.3s",
+                  borderRadius: "2px", // ทำให้เส้นมนขึ้น
+                  transition: "transform 0.3s ease-in-out",
+                  margin: "2px 0", // เพิ่มระยะห่างของแต่ละแถบ
                 }}
               />
             ))}

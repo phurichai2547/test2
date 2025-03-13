@@ -129,10 +129,8 @@ export default function Gallery() {
               <Box
                 sx={{
                   height: {
-                    mobile:
-                      index === 6 ? "100%" : 150 && index === 7 ? "100%" : 150,
-                    tablet:
-                      index === 6 ? "100%" : 250 && index === 7 ? "100%" : 250,
+                    mobile: index === 6 ? "100%" : index === 7 ? "100%" : 150,
+                    tablet: index === 6 ? "100%" : index === 7 ? "100%" : 250,
                     laptop: 469,
                   },
                   alignItems: "center",
@@ -141,15 +139,14 @@ export default function Gallery() {
                   gridRow:
                     index === 6
                       ? "3 / span 2"
-                      : "auto" && !Mobile
-                      ? index === 7
-                        ? "5 / span 2"
-                        : undefined
-                      : null,
+                      : !Mobile && index === 7
+                      ? "5 / span 2"
+                      : undefined,
+
                   gridColumn:
                     index === 6
                       ? "2 / span 1"
-                      : "auto" && index === 12
+                      : index === 12
                       ? "1 / span 2"
                       : "auto",
                 }}
